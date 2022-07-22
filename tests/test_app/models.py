@@ -25,7 +25,7 @@ def signalling(app, changes, **kwargs):
         if instance.__tablename__ in [i.__tablename__ for i in [User]]:
             models_committed.disconnect(signalling)
             session = db.create_scoped_session()
-            user = session.query(User).first()
+            user = session.query(User).order_by(User.id).first()
             if user and user.username == 'signalling_test':
                 user.username = 'signalling_ok'
                 session.merge(user)
