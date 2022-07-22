@@ -22,3 +22,4 @@ tests/tst_app.sqlite
 models.csv
 
 .coverage*
+flask_rest_engine.egg-info/*
