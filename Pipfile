@@ -6,11 +6,11 @@ name = "pypi"
 [packages]
 tox = "*"
 ipython = "*"
-hobbit-core = {editable = true,extras = ["hobbit", "hobbit_core"],path = "."}
+flask-rest-engine = {editable = true,path = "."}
+pytest = "*"
 
 [dev-packages]
 sphinx-autobuild = "*"
-psycopg2-binary = "*"
 cx-Oracle = "*"
 pytest = "*"
 pytest-cov = "*"
@@ -21,7 +21,6 @@ mypy = "*"
 mypy-extensions = "*"
 Sphinx = "*"
 Flask-Sphinx-Themes = "*"
-PyMySQL = "*"
 cryptography = "*"
 
 [requires]
